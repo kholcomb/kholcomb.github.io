@@ -1,10 +1,37 @@
-// Custom cursor
+// Theme Switcher
+const themeSelector = document.getElementById('theme-selector');
+const body = document.body;
+
+// Load saved theme or default to original
+const savedTheme = localStorage.getItem('theme') || 'original';
+if (savedTheme !== 'original') {
+    body.setAttribute('data-theme', savedTheme);
+}
+themeSelector.value = savedTheme;
+
+// Theme switching functionality
+themeSelector.addEventListener('change', (e) => {
+    const theme = e.target.value;
+    
+    if (theme === 'original') {
+        body.removeAttribute('data-theme');
+    } else {
+        body.setAttribute('data-theme', theme);
+    }
+    
+    // Save theme preference
+    localStorage.setItem('theme', theme);
+    
+});
+
+// Simple, visible cursor
 const cursor = document.querySelector('.cursor');
-const cursorTrail = document.querySelector('.cursor-trail');
 
 document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX - 5 + 'px';
-    cursor.style.top = e.clientY - 5 + 'px';
+    if (cursor) {
+        cursor.style.left = e.clientX - 8 + 'px';
+        cursor.style.top = e.clientY - 8 + 'px';
+    }
 });
 
 // Simple cursor - no hover effects for precision
