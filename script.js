@@ -3,28 +3,11 @@ const cursor = document.querySelector('.cursor');
 const cursorTrail = document.querySelector('.cursor-trail');
 
 document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX - 10 + 'px';
-    cursor.style.top = e.clientY - 10 + 'px';
-    
-    setTimeout(() => {
-        cursorTrail.style.left = e.clientX - 4 + 'px';
-        cursorTrail.style.top = e.clientY - 4 + 'px';
-    }, 100);
+    cursor.style.left = e.clientX - 5 + 'px';
+    cursor.style.top = e.clientY - 5 + 'px';
 });
 
-// Cursor hover effects
-const clickables = document.querySelectorAll('a, button, .tech-item, .cert-card, .project-card');
-clickables.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'scale(1.5)';
-        cursor.style.borderColor = 'var(--accent)';
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'scale(1)';
-        cursor.style.borderColor = 'var(--primary-color)';
-    });
-});
+// Simple cursor - no hover effects for precision
 
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
