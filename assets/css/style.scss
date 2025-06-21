@@ -1,9 +1,5 @@
-@import "{{ site.theme }}";
-
-/* Import our custom styles as base */
-{% if site.theme == null %}
-@import url('/styles.css');
-{% endif %}
+---
+---
 
 /* Minimal Theme */
 body.minimal {
