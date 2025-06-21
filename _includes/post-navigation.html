@@ -1,0 +1,110 @@
+<nav class="post-navigation">
+    <div class="nav-links">
+        {% if page.previous.url %}
+        <div class="nav-previous">
+            <a href="{{ page.previous.url | relative_url }}" rel="prev">
+                <span class="nav-direction">← Previous</span>
+                <span class="nav-title">{{ page.previous.title }}</span>
+            </a>
+        </div>
+        {% endif %}
+
+        {% if page.next.url %}
+        <div class="nav-next">
+            <a href="{{ page.next.url | relative_url }}" rel="next">
+                <span class="nav-direction">Next →</span>
+                <span class="nav-title">{{ page.next.title }}</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="back-to-blog">
+        <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline">← Back to Blog</a>
+    </div>
+</nav>
+
+<style>
+.post-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--bg-light, #e2e8f0);
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-previous,
+.nav-next {
+    padding: 1rem;
+    border: 1px solid var(--bg-light, #e2e8f0);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.nav-previous:hover,
+.nav-next:hover {
+    border-color: var(--primary-color, #0366d6);
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.nav-previous a,
+.nav-next a {
+    text-decoration: none;
+    color: var(--text-primary, #333);
+    display: block;
+}
+
+.nav-direction {
+    font-size: 0.9rem;
+    color: var(--text-secondary, #666);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.nav-title {
+    font-weight: 600;
+    color: var(--primary-color, #0366d6);
+}
+
+.back-to-blog {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-color, #0366d6);
+    color: var(--primary-color, #0366d6);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color, #0366d6);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-next {
+        text-align: left;
+    }
+}
+</style>

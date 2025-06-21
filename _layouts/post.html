@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% include post-meta.html %}
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    {% if page.tags %}
+    <div class="post-tags">
+        <h4>Tags:</h4>
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% include post-navigation.html %}
+</article>
+
+<style>
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    line-height: 1.6;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-light, #e2e8f0);
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary, #333);
+}
+
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.post-content h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    color: var(--primary-color, #0366d6);
+}
+
+.post-content h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.5rem 0;
+    color: var(--text-primary, #333);
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content code {
+    background: var(--bg-light, #f6f8fa);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background: var(--bg-light, #f6f8fa);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-tags {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--bg-light, #e2e8f0);
+}
+
+.post-tags h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary, #333);
+}
+
+.post-tags .tag {
+    background: var(--bg-light, #f6f8fa);
+    color: var(--primary-color, #0366d6);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 0 1rem;
+    }
+    
+    .post-title {
+        font-size: 2rem;
+    }
+    
+    .post-content {
+        font-size: 1rem;
+    }
+}
+</style>

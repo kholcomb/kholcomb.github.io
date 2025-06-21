@@ -1,0 +1,187 @@
+<aside class="blog-sidebar">
+    <!-- Recent Posts -->
+    <div class="sidebar-section">
+        <h3>Recent Posts</h3>
+        <ul class="recent-posts">
+            {% for post in site.posts limit:5 %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%b %d, %Y" }}
+                </time>
+            </li>
+            {% else %}
+            <li class="no-posts">No posts yet. Check back soon!</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Categories -->
+    {% assign categories = site.categories | sort %}
+    {% if categories.size > 0 %}
+    <div class="sidebar-section">
+        <h3>Categories</h3>
+        <ul class="categories">
+            {% for category in categories %}
+            <li>
+                <a href="{{ '/blog/categories/#' | append: category[0] | slugify | relative_url }}">
+                    {{ category[0] }} ({{ category[1].size }})
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- Tags -->
+    {% assign tags = site.tags | sort %}
+    {% if tags.size > 0 %}
+    <div class="sidebar-section">
+        <h3>Tags</h3>
+        <div class="tag-cloud">
+            {% for tag in tags %}
+            <a href="{{ '/blog/tags/#' | append: tag[0] | slugify | relative_url }}" 
+               class="tag-link" 
+               title="{{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}">
+                {{ tag[0] }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Archive -->
+    <div class="sidebar-section">
+        <h3>Archive</h3>
+        <ul class="archive">
+            {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+            {% for year in posts_by_year %}
+            <li>
+                <a href="{{ '/blog/archive/#' | append: year.name | relative_url }}">
+                    {{ year.name }} ({{ year.items.size }})
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- About -->
+    <div class="sidebar-section">
+        <h3>About</h3>
+        <p class="sidebar-about">
+            Security insights and technical thoughts by {{ site.blog.author | default: "Kyle Holcomb" }}. 
+            Covering cloud security, Kubernetes, and building secure systems.
+        </p>
+    </div>
+</aside>
+
+<style>
+.blog-sidebar {
+    background: var(--bg-light, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-section h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color, #0366d6);
+    border-bottom: 2px solid var(--primary-color, #0366d6);
+    padding-bottom: 0.5rem;
+}
+
+.recent-posts,
+.categories,
+.archive {
+    list-style: none;
+}
+
+.recent-posts li,
+.categories li,
+.archive li {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--bg-medium, #e2e8f0);
+}
+
+.recent-posts li:last-child,
+.categories li:last-child,
+.archive li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.recent-posts a,
+.categories a,
+.archive a {
+    color: var(--text-primary, #333);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.recent-posts a:hover,
+.categories a:hover,
+.archive a:hover {
+    color: var(--primary-color, #0366d6);
+}
+
+.recent-posts time {
+    font-size: 0.8rem;
+    color: var(--text-secondary, #666);
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.no-posts {
+    color: var(--text-secondary, #666);
+    font-style: italic;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-link {
+    background: var(--bg-medium, #e2e8f0);
+    color: var(--text-primary, #333);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.tag-link:hover {
+    background: var(--primary-color, #0366d6);
+    color: white;
+}
+
+.sidebar-about {
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .blog-sidebar {
+        margin-top: 2rem;
+        position: static;
+    }
+}
+</style>

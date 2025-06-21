@@ -9,6 +9,15 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
+
+# Blog configuration
+paginate: 5
+paginate_path: "/blog/page:num/"
+excerpt_separator: "<!--more-->"
+
+# Permalink structure for blog posts
+permalink: /blog/:year/:month/:day/:title/
 
 # Theme configuration for different versions
 collections:
@@ -22,3 +31,9 @@ theme: null
 # Build settings
 safe: true
 incremental: false
+
+# Blog settings
+blog:
+  title: "Security Insights"
+  description: "Thoughts on cloud security, Kubernetes, and building secure systems"
+  author: "Kyle Holcomb"
