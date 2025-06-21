@@ -13,6 +13,7 @@ body.minimal {
   
   background: var(--bg-dark) !important;
   color: var(--text-primary) !important;
+  cursor: default !important;
 }
 
 body.minimal .navbar {
@@ -78,6 +79,11 @@ body.hacker {
   background: var(--bg-dark) !important;
   color: var(--text-primary) !important;
   font-family: 'Courier New', monospace !important;
+  cursor: default !important;
+}
+
+body.hacker .cursor {
+  display: none !important;
 }
 
 body.hacker .navbar {
@@ -140,6 +146,7 @@ body.cayman {
   
   background: var(--bg-dark) !important;
   color: var(--text-primary) !important;
+  cursor: default !important;
 }
 
 body.cayman .hero {
@@ -201,6 +208,7 @@ body.architect {
   
   background: var(--bg-dark) !important;
   color: var(--text-primary) !important;
+  cursor: default !important;
 }
 
 body.architect .navbar {
