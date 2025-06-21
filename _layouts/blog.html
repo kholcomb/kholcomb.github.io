@@ -2,6 +2,36 @@
 layout: default
 ---
 
+<style>
+/* Override main page styles for blog */
+.hero {
+    display: none !important;
+}
+
+body {
+    overflow-y: auto !important;
+    min-height: auto !important;
+}
+
+.content {
+    padding-top: 100px; /* Account for navbar */
+    min-height: auto !important;
+}
+
+/* Ensure blog container is scrollable */
+html, body {
+    height: auto !important;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+}
+
+/* Hide any floating elements that might interfere */
+.floating-code,
+.cursor {
+    display: none !important;
+}
+</style>
+
 <div class="blog-container">
     <header class="blog-header">
         <h1>{{ site.blog.title | default: "Security Blog" }}</h1>
