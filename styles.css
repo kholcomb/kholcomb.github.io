@@ -77,6 +77,14 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Override cursor for themed pages */
+body.minimal,
+body.hacker,
+body.cayman,
+body.architect {
+    cursor: default !important;
+}
+
 [data-theme="minimalist"] body {
     background: var(--bg-dark);
 }
