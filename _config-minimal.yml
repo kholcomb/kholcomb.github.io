@@ -1,0 +1,11 @@
+theme: minimal
+title: Kyle Holcomb - Security Professional
+description: Personal website of Kyle Holcomb - Security Professional, Cloud Architect, and Open Source Contributor
+url: https://kholcomb.github.io
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

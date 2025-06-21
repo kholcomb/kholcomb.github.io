@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    {% if site.theme %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    {% endif %}
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    {% if page.custom_css %}
+    <link rel="stylesheet" href="{{ page.custom_css | relative_url }}">
+    {% endif %}
+</head>
+<body{% if page.theme_class %} class="{{ page.theme_class }}"{% endif %}>
+    
+    {% include navigation.html %}
+    
+    <main class="content">
+        {{ content }}
+    </main>
+    
+    {% include footer.html %}
+    
+    <script src="{{ '/script.js' | relative_url }}"></script>
+    {% if page.custom_js %}
+    <script src="{{ page.custom_js | relative_url }}"></script>
+    {% endif %}
+</body>
+</html>

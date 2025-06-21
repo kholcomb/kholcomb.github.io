@@ -1,38 +1,12 @@
-// Theme Switcher
-const themeSelector = document.getElementById('theme-selector');
-const body = document.body;
-
-// Load saved theme or default to original
-const savedTheme = localStorage.getItem('theme') || 'original';
-if (savedTheme !== 'original') {
-    body.setAttribute('data-theme', savedTheme);
-}
-themeSelector.value = savedTheme;
-
-// Theme switching functionality
-themeSelector.addEventListener('change', (e) => {
-    const theme = e.target.value;
-    
-    if (theme === 'original') {
-        body.removeAttribute('data-theme');
-    } else {
-        body.setAttribute('data-theme', theme);
-    }
-    
-    // Save theme preference
-    localStorage.setItem('theme', theme);
-    
-});
-
-// Simple, visible cursor
+// Simple, visible cursor (only for original theme)
 const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', (e) => {
-    if (cursor) {
+if (cursor) {
+    document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX - 8 + 'px';
         cursor.style.top = e.clientY - 8 + 'px';
-    }
-});
+    });
+}
 
 // Simple cursor - no hover effects for precision
 

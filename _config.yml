@@ -1,5 +1,24 @@
-theme: null
 title: Kyle Holcomb - Security Professional & Claude Code Enthusiast
 description: Personal website of Kyle Holcomb - Security Professional, Cloud Architect, and Open Source Contributor
 url: https://kholcomb.github.io
 baseurl: ""
+
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme configuration for different versions
+collections:
+  themes:
+    output: true
+    permalink: /:name/
+
+# Default theme (none - use custom CSS)
+theme: null
+
+# Build settings
+safe: true
+incremental: false
