@@ -207,3 +207,44 @@ body.cayman .tag-post-excerpt {
     }
 }
 </style>
+
+<script>
+// Smooth scrolling for tag cloud links
+document.addEventListener('DOMContentLoaded', function() {
+    const tagCloudLinks = document.querySelectorAll('.tag-cloud .tag-link');
+    
+    tagCloudLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update URL without triggering page reload
+                    history.pushState(null, null, href);
+                }
+            }
+        });
+    });
+    
+    // Handle initial page load with hash
+    if (window.location.hash) {
+        const targetElement = document.getElementById(window.location.hash.substring(1));
+        if (targetElement) {
+            setTimeout(() => {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
+        }
+    }
+});
+</script>

@@ -40,7 +40,7 @@
         <h3>Tags</h3>
         <div class="tag-cloud">
             {% for tag in tags %}
-            <a href="{{ '/blog/tags/#' | append: tag[0] | slugify | relative_url }}" 
+            <a href="{{ '/tags/#' | append: tag[0] | slugify | relative_url }}" 
                class="tag-link" 
                title="{{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}">
                 {{ tag[0] }}
