@@ -26,50 +26,184 @@ theme_class: "cayman"
 </article>
 
 <style>
+/* Hide hero section for blog posts */
+.hero {
+    display: none !important;
+}
+
+/* Ensure proper scrolling and layout for blog posts */
+body {
+    overflow-y: auto !important;
+    min-height: auto !important;
+}
+
+.content {
+    padding-top: 100px; /* Account for navbar */
+    min-height: auto !important;
+}
+
+/* Comprehensive Cayman theme overrides for individual blog posts */
+body.cayman {
+    background: #ffffff !important;
+    color: #333333 !important;
+}
+
+body.cayman .navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+body.cayman .nav-logo {
+    color: #155799 !important;
+    text-shadow: none !important;
+}
+
+body.cayman .nav-link {
+    color: #606c71 !important;
+}
+
+body.cayman .nav-link:hover {
+    color: #155799 !important;
+}
+
+body.cayman .nav-link::after {
+    background: #155799 !important;
+}
+
 .blog-post {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 2rem;
     line-height: 1.6;
+    background: #ffffff !important;
 }
 
 .post-header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--bg-light, #e2e8f0);
+    border-bottom: 1px solid #e9ecef;
 }
 
 .post-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-primary, #333);
+    color: #155799 !important;
 }
 
 .post-content {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
+    color: #333333 !important;
 }
 
 .post-content h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem 0;
-    color: var(--primary-color, #155799);
+    color: #155799 !important;
 }
 
-/* Cayman theme overrides for post content */
-body.cayman .post-title {
-    color: var(--primary-color, #155799) !important;
+.post-content h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.5rem 0;
+    color: #333333 !important;
 }
 
-body.cayman .post-content h2 {
-    color: var(--primary-color, #155799) !important;
+.post-content h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+    color: #333333 !important;
 }
 
-body.cayman .post-tags .tag {
-    background: var(--bg-light, #e9ecef) !important;
-    color: var(--primary-color, #155799) !important;
+.post-content p {
+    margin-bottom: 1rem;
+    color: #333333 !important;
+}
+
+.post-content ul,
+.post-content ol {
+    color: #333333 !important;
+    margin-bottom: 1rem;
+}
+
+.post-content li {
+    color: #333333 !important;
+    margin-bottom: 0.5rem;
+}
+
+.post-content strong {
+    color: #155799 !important;
+}
+
+.post-content em {
+    color: #606c71 !important;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #155799;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #606c71 !important;
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.post-content code {
+    background: #f6f8fa !important;
+    color: #333333 !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background: #f6f8fa !important;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border: 1px solid #e9ecef;
+}
+
+.post-content pre code {
+    background: none !important;
+    padding: 0;
+    color: #333333 !important;
+}
+
+.post-content a {
+    color: #155799 !important;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    color: #159957 !important;
+    text-decoration: underline;
+}
+
+.post-tags {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.post-tags h4 {
+    margin-bottom: 0.5rem;
+    color: #333333 !important;
+}
+
+.post-tags .tag {
+    background: #e9ecef !important;
+    color: #155799 !important;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
 }
 
 .post-content h3 {
