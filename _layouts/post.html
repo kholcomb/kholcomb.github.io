@@ -1,7 +1,34 @@
 ---
 layout: default
 theme_class: "cayman"
+custom_css: ""
 ---
+
+<style>
+/* Critical CSS overrides that must load after all other stylesheets */
+:root {
+    --primary-color: #155799 !important;
+    --secondary-color: #159957 !important;
+    --bg-dark: #ffffff !important;
+    --bg-medium: #f5f5f5 !important;
+    --bg-light: #e9ecef !important;
+    --text-primary: #333333 !important;
+    --text-secondary: #606c71 !important;
+}
+
+html,
+body,
+body.cayman {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+main.content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+</style>
 
 <article class="blog-post">
     <header class="post-header">
@@ -26,6 +53,18 @@ theme_class: "cayman"
 </article>
 
 <style>
+/* Override root CSS variables for blog posts */
+html:has(body.cayman),
+:root:has(body.cayman) {
+    --primary-color: #155799 !important;
+    --secondary-color: #159957 !important;
+    --bg-dark: #ffffff !important;
+    --bg-medium: #f5f5f5 !important;
+    --bg-light: #e9ecef !important;
+    --text-primary: #333333 !important;
+    --text-secondary: #606c71 !important;
+}
+
 /* Hide hero section for blog posts */
 .hero {
     display: none !important;
@@ -37,14 +76,24 @@ body {
     min-height: auto !important;
 }
 
+body.cayman {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
 .content {
     padding-top: 100px; /* Account for navbar */
     min-height: auto !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
 /* Comprehensive Cayman theme overrides for individual blog posts */
-body.cayman {
+:root body.cayman,
+html body.cayman {
     background: #ffffff !important;
+    background-color: #ffffff !important;
     color: #333333 !important;
     --primary-color: #155799 !important;
     --secondary-color: #159957 !important;
@@ -224,12 +273,18 @@ body.cayman .nav-link::after {
 }
 
 /* Additional specificity for Cayman theme overrides */
-html body.cayman .content {
+html body.cayman,
+html body.cayman *,
+html body.cayman .content,
+html body.cayman main,
+html body.cayman main.content {
     background: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
 html body.cayman .blog-post {
     background: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
 html body.cayman .post-content * {
