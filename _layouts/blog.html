@@ -1,5 +1,6 @@
 ---
 layout: default
+theme_class: "cayman"
 ---
 
 <style>
@@ -29,6 +30,46 @@ html, body {
 .floating-code,
 .cursor {
     display: none !important;
+}
+
+/* Apply Cayman theme colors to blog */
+body.cayman .blog-header h1 {
+    color: var(--primary-color, #155799) !important;
+}
+
+body.cayman .blog-description {
+    color: var(--text-secondary, #606c71) !important;
+}
+
+body.cayman .blog-post-title a {
+    color: var(--text-primary, #333333) !important;
+}
+
+body.cayman .blog-post-title a:hover {
+    color: var(--primary-color, #155799) !important;
+}
+
+body.cayman .blog-post-readmore {
+    color: var(--primary-color, #155799) !important;
+}
+
+body.cayman .pagination a {
+    color: var(--text-primary, #333333) !important;
+    border-color: var(--bg-light, #e9ecef) !important;
+}
+
+body.cayman .pagination a:hover {
+    background: var(--primary-color, #155799) !important;
+    color: white !important;
+}
+
+body.cayman .pagination .current {
+    background: var(--primary-color, #155799) !important;
+    color: white !important;
+}
+
+body.cayman .blog-header {
+    border-bottom-color: var(--primary-color, #155799) !important;
 }
 </style>
 

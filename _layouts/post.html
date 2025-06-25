@@ -1,5 +1,6 @@
 ---
 layout: default
+theme_class: "cayman"
 ---
 
 <article class="blog-post">
@@ -54,7 +55,21 @@ layout: default
 .post-content h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem 0;
-    color: var(--primary-color, #0366d6);
+    color: var(--primary-color, #155799);
+}
+
+/* Cayman theme overrides for post content */
+body.cayman .post-title {
+    color: var(--primary-color, #155799) !important;
+}
+
+body.cayman .post-content h2 {
+    color: var(--primary-color, #155799) !important;
+}
+
+body.cayman .post-tags .tag {
+    background: var(--bg-light, #e9ecef) !important;
+    color: var(--primary-color, #155799) !important;
 }
 
 .post-content h3 {
