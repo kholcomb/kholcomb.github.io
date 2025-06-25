@@ -80,6 +80,26 @@ body.cayman {
     background: #ffffff !important;
     background-color: #ffffff !important;
     color: #333333 !important;
+    cursor: default !important;
+}
+
+/* Ensure cursor is always visible on blog posts */
+*,
+*::before,
+*::after,
+body,
+body.cayman,
+html,
+main,
+.content,
+.blog-post,
+article {
+    cursor: default !important;
+}
+
+/* Hide any custom cursor elements */
+.cursor {
+    display: none !important;
 }
 
 .content {

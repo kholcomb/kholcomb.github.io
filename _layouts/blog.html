@@ -36,6 +36,7 @@ html, body {
 body.cayman {
     background: #ffffff !important;
     color: #333333 !important;
+    cursor: default !important;
     --primary-color: #155799 !important;
     --secondary-color: #159957 !important;
     --bg-dark: #ffffff !important;
@@ -43,6 +44,20 @@ body.cayman {
     --bg-light: #e9ecef !important;
     --text-primary: #333333 !important;
     --text-secondary: #606c71 !important;
+}
+
+/* Ensure cursor is always visible on blog pages */
+*,
+*::before,
+*::after,
+body,
+body.cayman,
+html,
+main,
+.content,
+.blog-container,
+.blog-main {
+    cursor: default !important;
 }
 
 body.cayman .content {
