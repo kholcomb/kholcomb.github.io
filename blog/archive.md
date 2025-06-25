@@ -2,6 +2,7 @@
 layout: blog
 title: "Blog Archive"
 description: "All blog posts organized by date"
+theme_class: "cayman"
 permalink: /blog/archive/
 ---
 
@@ -157,6 +158,49 @@ permalink: /blog/archive/
 
 .btn-primary:hover {
     background: var(--secondary-color, #0256cc);
+}
+
+/* Cayman theme overrides */
+body.cayman .archive-year h2 {
+    color: #155799 !important;
+    border-bottom-color: #155799 !important;
+}
+
+body.cayman .archive-month h3 {
+    color: #333333 !important;
+}
+
+body.cayman .archive-posts time {
+    background: #f6f8fa !important;
+    color: #606c71 !important;
+}
+
+body.cayman .archive-posts a {
+    color: #333333 !important;
+}
+
+body.cayman .archive-posts a:hover {
+    color: #155799 !important;
+}
+
+body.cayman .archive-posts .category {
+    background: #155799 !important;
+}
+
+body.cayman .no-archive h2 {
+    color: #155799 !important;
+}
+
+body.cayman .no-archive p {
+    color: #606c71 !important;
+}
+
+body.cayman .btn-primary {
+    background: #155799 !important;
+}
+
+body.cayman .btn-primary:hover {
+    background: #159957 !important;
 }
 
 @media (max-width: 768px) {

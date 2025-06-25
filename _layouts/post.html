@@ -17,7 +17,7 @@ theme_class: "cayman"
     <div class="post-tags">
         <h4>Tags:</h4>
         {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
+        <a href="{{ '/tags/#' | append: tag | slugify | relative_url }}" class="tag">{{ tag }}</a>
         {% endfor %}
     </div>
     {% endif %}
@@ -211,6 +211,16 @@ body.cayman .nav-link::after {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.post-tags .tag:hover {
+    background: #155799 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(21, 87, 153, 0.3);
 }
 
 /* Additional specificity for Cayman theme overrides */
@@ -268,6 +278,12 @@ html body.cayman .post-content pre code {
 html body.cayman .post-tags .tag {
     background: #e9ecef !important;
     color: #155799 !important;
+    text-decoration: none !important;
+}
+
+html body.cayman .post-tags .tag:hover {
+    background: #155799 !important;
+    color: white !important;
 }
 
 @media (max-width: 768px) {

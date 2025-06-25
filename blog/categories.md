@@ -2,6 +2,7 @@
 layout: blog
 title: "Categories"
 description: "Blog posts organized by category"
+theme_class: "cayman"
 permalink: /blog/categories/
 ---
 
@@ -200,6 +201,66 @@ permalink: /blog/categories/
 
 .btn-primary:hover {
     background: var(--secondary-color, #0256cc);
+}
+
+/* Cayman theme overrides */
+body.cayman .category-section h2 {
+    color: #155799 !important;
+}
+
+body.cayman .category-count {
+    color: #606c71 !important;
+}
+
+body.cayman .category-post-item {
+    background: #f8f9fa !important;
+    border-left-color: #155799 !important;
+}
+
+body.cayman .category-post-item h3 a {
+    color: #333333 !important;
+}
+
+body.cayman .category-post-item h3 a:hover {
+    color: #155799 !important;
+}
+
+body.cayman .category-post-item time,
+body.cayman .post-excerpt {
+    color: #606c71 !important;
+}
+
+body.cayman .tag {
+    background: #e9ecef !important;
+    color: #333333 !important;
+}
+
+body.cayman .no-categories h2 {
+    color: #155799 !important;
+}
+
+body.cayman .no-categories p {
+    color: #606c71 !important;
+}
+
+body.cayman .planned-categories {
+    background: #f8f9fa !important;
+}
+
+body.cayman .planned-categories h3 {
+    color: #155799 !important;
+}
+
+body.cayman .planned-categories strong {
+    color: #155799 !important;
+}
+
+body.cayman .btn-primary {
+    background: #155799 !important;
+}
+
+body.cayman .btn-primary:hover {
+    background: #159957 !important;
 }
 
 @media (max-width: 768px) {
