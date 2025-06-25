@@ -10,6 +10,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-redirect-from
 
 # Blog configuration
 paginate: 5
