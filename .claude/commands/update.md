@@ -1,3 +1,1 @@
-Commit
-PR
-Merge
+Commit, PR, Merge
