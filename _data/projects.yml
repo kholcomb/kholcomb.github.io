@@ -1,0 +1,35 @@
+- name: "PowerPlatform Security Assessment"
+  description: "Comprehensive PowerShell-based security assessment tool for Microsoft Power Platform environments."
+  icon: "fab fa-microsoft"
+  tags:
+    - "PowerShell"
+    - "Microsoft"
+    - "Security"
+  github_url: "https://github.com/kholcomb/PowerPlatform-Security-Assessment"
+
+- name: "K8Sec Toolkit"
+  description: "Kubernetes Security Scanner built with Go for comprehensive cluster security assessments."
+  icon: "fas fa-shield-alt"
+  tags:
+    - "Go"
+    - "Kubernetes"
+    - "Security"
+  github_url: "https://github.com/kholcomb/k8sec-toolkit"
+
+- name: "ClaudeCode Prompting Framework"
+  description: "Multi-Persona Development Team Framework - A prompt engineering template for structured, role-based development assistance with Claude Code."
+  icon: "fas fa-robot"
+  tags:
+    - "Shell"
+    - "Development"
+    - "AI"
+  github_url: "https://github.com/kholcomb/ClaudeCode_Prompting_Framework"
+
+- name: "Claude Code Tasks VSCode Extension"
+  description: "A Visual Studio Code extension that provides an intuitive interface for managing Claude Code todo lists within the VSCode environment."
+  icon: "fas fa-code"
+  tags:
+    - "TypeScript"
+    - "VSCode"
+    - "Tools"
+  github_url: "https://github.com/kholcomb/claude-code-tasks-vscode"

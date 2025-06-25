@@ -78,37 +78,23 @@
     <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
+            {% for project in site.data.projects %}
             <div class="project-card">
                 <div class="project-header">
-                    <i class="fas fa-shield-alt project-icon"></i>
-                    <h3>K8Sec Toolkit</h3>
+                    <i class="{{ project.icon }} project-icon"></i>
+                    <h3>{{ project.name }}</h3>
                 </div>
-                <p>Kubernetes Security Scanner built with Go for comprehensive cluster security assessments.</p>
+                <p>{{ project.description }}</p>
                 <div class="project-tags">
-                    <span class="tag">Go</span>
-                    <span class="tag">Kubernetes</span>
-                    <span class="tag">Security</span>
+                    {% for tag in project.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
                 </div>
-                <a href="https://github.com/kholcomb/k8sec-toolkit" class="project-link" target="_blank">
+                <a href="{{ project.github_url }}" class="project-link" target="_blank">
                     View on GitHub <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
-            
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fab fa-microsoft project-icon"></i>
-                    <h3>PowerPlatform Security Assessment</h3>
-                </div>
-                <p>Comprehensive PowerShell-based security assessment tool for Microsoft Power Platform environments.</p>
-                <div class="project-tags">
-                    <span class="tag">PowerShell</span>
-                    <span class="tag">Microsoft</span>
-                    <span class="tag">Security</span>
-                </div>
-                <a href="https://github.com/kholcomb/PowerPlatform-Security-Assessment" class="project-link" target="_blank">
-                    View on GitHub <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
