@@ -32,44 +32,98 @@ html, body {
     display: none !important;
 }
 
-/* Apply Cayman theme colors to blog */
-body.cayman .blog-header h1 {
-    color: var(--primary-color, #155799) !important;
+/* Comprehensive Cayman theme overrides for blog pages */
+body.cayman {
+    background: #ffffff !important;
+    color: #333333 !important;
+    --primary-color: #155799 !important;
+    --secondary-color: #159957 !important;
+    --bg-dark: #ffffff !important;
+    --bg-medium: #f5f5f5 !important;
+    --bg-light: #e9ecef !important;
+    --text-primary: #333333 !important;
+    --text-secondary: #606c71 !important;
 }
 
-body.cayman .blog-description {
-    color: var(--text-secondary, #606c71) !important;
+body.cayman .content {
+    background: #ffffff !important;
 }
 
-body.cayman .blog-post-title a {
-    color: var(--text-primary, #333333) !important;
+body.cayman .blog-container {
+    background: #ffffff !important;
 }
 
-body.cayman .blog-post-title a:hover {
-    color: var(--primary-color, #155799) !important;
+body.cayman .navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
 
-body.cayman .blog-post-readmore {
-    color: var(--primary-color, #155799) !important;
+body.cayman .nav-logo {
+    color: #155799 !important;
+    text-shadow: none !important;
 }
 
-body.cayman .pagination a {
-    color: var(--text-primary, #333333) !important;
-    border-color: var(--bg-light, #e9ecef) !important;
+body.cayman .nav-link {
+    color: #606c71 !important;
 }
 
-body.cayman .pagination a:hover {
-    background: var(--primary-color, #155799) !important;
-    color: white !important;
+body.cayman .nav-link:hover {
+    color: #155799 !important;
 }
 
-body.cayman .pagination .current {
-    background: var(--primary-color, #155799) !important;
-    color: white !important;
+body.cayman .nav-link::after {
+    background: #155799 !important;
 }
 
 body.cayman .blog-header {
-    border-bottom-color: var(--primary-color, #155799) !important;
+    border-bottom-color: #155799 !important;
+}
+
+body.cayman .blog-header h1 {
+    color: #155799 !important;
+}
+
+body.cayman .blog-description {
+    color: #606c71 !important;
+}
+
+body.cayman .blog-post-item {
+    background: #ffffff !important;
+    border-bottom-color: #e9ecef !important;
+}
+
+body.cayman .blog-post-title a {
+    color: #333333 !important;
+}
+
+body.cayman .blog-post-title a:hover {
+    color: #155799 !important;
+}
+
+body.cayman .blog-post-excerpt {
+    color: #606c71 !important;
+}
+
+body.cayman .blog-post-readmore {
+    color: #155799 !important;
+}
+
+body.cayman .pagination a {
+    color: #333333 !important;
+    border-color: #e9ecef !important;
+    background: #ffffff !important;
+}
+
+body.cayman .pagination a:hover {
+    background: #155799 !important;
+    color: white !important;
+    border-color: #155799 !important;
+}
+
+body.cayman .pagination .current {
+    background: #155799 !important;
+    color: white !important;
+    border-color: #155799 !important;
 }
 </style>
 
