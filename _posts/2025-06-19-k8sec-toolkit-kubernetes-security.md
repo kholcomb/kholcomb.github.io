@@ -5,6 +5,11 @@ date: 2025-06-19 11:00:00 -0800
 categories: [kubernetes, security, tools]
 tags: [k8s, golang, security-scanning, devops]
 excerpt: "Introducing K8Sec Toolkit, a powerful Go-based security scanner that automates comprehensive Kubernetes cluster security assessments, from RBAC analysis to workload security validation."
+redirect_from:
+  - /categories-kubernetes/
+  - /blog-categories-kubernetes/
+  - /categories-devops/
+  - /blog-categories-devops/
 ---
 
 # K8Sec Toolkit: Automating Kubernetes Security Assessments with Go

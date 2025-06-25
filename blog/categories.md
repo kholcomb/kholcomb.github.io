@@ -4,25 +4,6 @@ title: "Categories"
 description: "Blog posts organized by category"
 theme_class: "cayman"
 permalink: /blog/categories/
-redirect_from:
-  - /categories-ai/
-  - /categories-security/
-  - /categories-kubernetes/
-  - /categories-tools/
-  - /categories-development/
-  - /categories-vscode/
-  - /categories-microsoft/
-  - /categories-productivity/
-  - /categories-devops/
-  - /blog-categories-ai/
-  - /blog-categories-security/
-  - /blog-categories-kubernetes/
-  - /blog-categories-tools/
-  - /blog-categories-development/
-  - /blog-categories-vscode/
-  - /blog-categories-microsoft/
-  - /blog-categories-productivity/
-  - /blog-categories-devops/
 ---
 
 <div class="categories-container">
