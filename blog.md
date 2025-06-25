@@ -2,6 +2,7 @@
 layout: blog
 title: "Security Blog"
 description: "Insights on cloud security, Kubernetes, and building secure systems"
+theme_class: "cayman"
 permalink: /blog/
 ---
 
@@ -84,7 +85,7 @@ permalink: /blog/
 
 .no-posts-message h2 {
     font-size: 2.5rem;
-    color: var(--primary-color, #0366d6);
+    color: var(--primary-color, #155799);
     margin-bottom: 1rem;
 }
 
@@ -103,7 +104,7 @@ permalink: /blog/
 }
 
 .planned-topics h3 {
-    color: var(--primary-color, #0366d6);
+    color: var(--primary-color, #155799);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -125,7 +126,7 @@ permalink: /blog/
     content: "→";
     position: absolute;
     left: 0;
-    color: var(--primary-color, #0366d6);
+    color: var(--primary-color, #155799);
     font-weight: bold;
 }
 

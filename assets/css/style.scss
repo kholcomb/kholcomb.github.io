@@ -64,3 +64,67 @@ body.cayman .floating-code {
   animation: none !important;
 }
 
+/* Blog-specific Cayman styling */
+body.cayman .blog-container {
+  background: var(--bg-dark) !important;
+}
+
+body.cayman .blog-header {
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  margin: -2rem -2rem 2rem -2rem !important;
+  padding: 3rem 2rem !important;
+  border-radius: 0 !important;
+}
+
+body.cayman .blog-header h1 {
+  color: white !important;
+}
+
+body.cayman .blog-description {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.cayman .blog-post-item {
+  background: white !important;
+  border-radius: 6px !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+body.cayman .blog-post-title a {
+  color: var(--primary-color) !important;
+}
+
+body.cayman .blog-post-title a:hover {
+  color: var(--secondary-color) !important;
+}
+
+body.cayman .blog-post-readmore {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+}
+
+body.cayman .blog-post-readmore:hover {
+  color: var(--secondary-color) !important;
+}
+
+body.cayman .pagination a {
+  background: white !important;
+  border: 1px solid var(--bg-light) !important;
+  color: var(--primary-color) !important;
+}
+
+body.cayman .pagination a:hover {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+}
+
+body.cayman .pagination .current {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+}
+
