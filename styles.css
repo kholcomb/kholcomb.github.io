@@ -21,27 +21,27 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
     overflow-x: hidden;
-    cursor: none;
+    cursor: default;
     transition: all 0.3s ease;
 }
 
-/* Override cursor for Cayman themed page */
+/* Ensure cursor is always visible */
+*,
+*::before,
+*::after,
+body,
+body.cayman,
+html {
+    cursor: default !important;
+}
+
+/* Override any cursor hiding */
 body.cayman {
     cursor: default !important;
 }
 
 .cursor {
-    width: 12px;
-    height: 12px;
-    background: var(--primary-color);
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: all 0.2s ease;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    display: none !important;
 }
 
 

@@ -1,11 +1,8 @@
-// Simple, visible cursor (only for original theme)
+// Disable custom cursor - use default system cursor
 const cursor = document.querySelector('.cursor');
 
 if (cursor) {
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX - 8 + 'px';
-        cursor.style.top = e.clientY - 8 + 'px';
-    });
+    cursor.style.display = 'none';
 }
 
 // Simple cursor - no hover effects for precision
