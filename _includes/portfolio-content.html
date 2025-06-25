@@ -90,9 +90,16 @@
                     <span class="tag">{{ tag }}</span>
                     {% endfor %}
                 </div>
-                <a href="{{ project.github_url }}" class="project-link" target="_blank">
-                    View on GitHub <i class="fas fa-external-link-alt"></i>
-                </a>
+                <div class="project-links">
+                    <a href="{{ project.github_url }}" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    {% if project.blog_url %}
+                    <a href="{{ project.blog_url | relative_url }}" class="project-link blog-link">
+                        <i class="fas fa-blog"></i> Read More
+                    </a>
+                    {% endif %}
+                </div>
             </div>
             {% endfor %}
         </div>

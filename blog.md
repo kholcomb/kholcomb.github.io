@@ -9,10 +9,10 @@ permalink: /blog/
 <div class="blog-posts">
     {% if site.posts.size > 0 %}
         {% for post in paginator.posts %}
-        <article class="blog-post-item">
+        <article class="blog-post-item" data-post-url="{{ post.url | relative_url }}">
             <header>
                 <h2 class="blog-post-title">
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <a href="{{ post.url | relative_url }}" class="dynamic-post-link">{{ post.title }}</a>
                 </h2>
                 {% include post-meta.html %}
             </header>
@@ -25,7 +25,7 @@ permalink: /blog/
                 {% endif %}
             </div>
             
-            <a href="{{ post.url | relative_url }}" class="blog-post-readmore">
+            <a href="{{ post.url | relative_url }}" class="blog-post-readmore dynamic-post-link">
                 Read more →
             </a>
         </article>

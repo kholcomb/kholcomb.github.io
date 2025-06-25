@@ -128,3 +128,26 @@ body.cayman .pagination .current {
   border-color: var(--primary-color) !important;
 }
 
+/* Project links Cayman styling */
+body.cayman .project-link {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+body.cayman .project-link:hover {
+  background: var(--primary-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 8px rgba(21, 87, 153, 0.3) !important;
+}
+
+body.cayman .project-link.blog-link {
+  border-color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+body.cayman .project-link.blog-link:hover {
+  background: var(--secondary-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 8px rgba(21, 153, 87, 0.3) !important;
+}
+

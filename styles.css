@@ -451,6 +451,13 @@ body.cayman {
     color: var(--primary-color);
 }
 
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
 .project-link {
     color: var(--primary-color);
     text-decoration: none;
@@ -458,11 +465,30 @@ body.cayman {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: gap 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-width: fit-content;
 }
 
 .project-link:hover {
-    gap: 1rem;
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 136, 255, 0.3);
+}
+
+.project-link.blog-link {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.project-link.blog-link:hover {
+    background: var(--secondary-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 255, 136, 0.3);
 }
 
 .contact {

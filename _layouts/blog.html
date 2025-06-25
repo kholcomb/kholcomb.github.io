@@ -81,10 +81,14 @@ body.cayman .blog-header {
 
     <main class="blog-main">
         {{ content }}
+        <!-- Dynamic content area will be inserted here by JavaScript -->
     </main>
 
     {% include blog-sidebar.html %}
 </div>
+
+<!-- Include dynamic blog loader -->
+<script src="{{ '/assets/js/blog-loader.js' | relative_url }}"></script>
 
 <style>
 .blog-container {
