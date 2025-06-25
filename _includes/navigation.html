@@ -7,28 +7,8 @@
             <li><a href="{{ '/' | relative_url }}#home" class="nav-link">Home</a></li>
             <li><a href="{{ '/' | relative_url }}#about" class="nav-link">About</a></li>
             <li><a href="{{ '/' | relative_url }}#projects" class="nav-link">Projects</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
             <li><a href="{{ '/' | relative_url }}#contact" class="nav-link">Contact</a></li>
-            <li><a href="{{ '/themes/' | relative_url }}" class="nav-link">Themes</a></li>
         </ul>
-        
-        <!-- Theme Selector -->
-        <div class="theme-switcher">
-            <select id="theme-selector" onchange="switchTheme(this.value)">
-                <option value="">Switch Theme</option>
-                <option value="{{ '/original/' | relative_url }}">Original</option>
-                <option value="{{ '/minimal/' | relative_url }}">Minimal</option>
-                <option value="{{ '/cayman/' | relative_url }}">Cayman</option>
-                <option value="{{ '/architect/' | relative_url }}">Architect</option>
-                <option value="{{ '/themes/' | relative_url }}">View All</option>
-            </select>
-        </div>
     </div>
 </nav>
-
-<script>
-function switchTheme(url) {
-    if (url) {
-        window.location.href = url;
-    }
-}
-</script>
