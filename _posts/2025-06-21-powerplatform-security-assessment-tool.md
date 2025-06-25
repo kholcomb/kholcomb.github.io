@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Securing Microsoft Power Platform: Introducing a Comprehensive Assessment Tool"
-date: 2024-12-19 10:00:00 -0800
+date: 2025-06-21 10:00:00 -0800
 categories: [security, microsoft, tools]
 tags: [powershell, power-platform, security-assessment, microsoft-365]
 excerpt: "Discover how to comprehensively assess and secure your Microsoft Power Platform environment with an automated PowerShell-based security assessment tool that identifies vulnerabilities and provides actionable remediation guidance."
