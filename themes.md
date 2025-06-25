@@ -40,20 +40,6 @@ permalink: /themes/
             </div>
             
             <div class="theme-card">
-                <h3>Hacker</h3>
-                <p>Terminal-inspired design perfect for showcasing technical skills</p>
-                <div class="theme-preview">
-                    <div class="preview-colors">
-                        <span style="background: #000000;"></span>
-                        <span style="background: #00ff00;"></span>
-                        <span style="background: #ffffff;"></span>
-                        <span style="background: #333333;"></span>
-                    </div>
-                </div>
-                <a href="{{ '/hacker/' | relative_url }}" class="theme-btn">View Hacker</a>
-            </div>
-            
-            <div class="theme-card">
                 <h3>Cayman</h3>
                 <p>Modern, professional design with gradient headers</p>
                 <div class="theme-preview">

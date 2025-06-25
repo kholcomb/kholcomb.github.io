@@ -79,7 +79,6 @@ body {
 
 /* Override cursor for themed pages */
 body.minimal,
-body.hacker,
 body.cayman,
 body.architect {
     cursor: default !important;
