@@ -6,6 +6,7 @@
     - "Microsoft"
     - "Security"
   github_url: "https://github.com/kholcomb/PowerPlatform-Security-Assessment"
+  blog_url: "/blog/2024/12/19/powerplatform-security-assessment-tool/"
 
 - name: "K8Sec Toolkit"
   description: "Kubernetes Security Scanner built with Go for comprehensive cluster security assessments."
@@ -15,6 +16,7 @@
     - "Kubernetes"
     - "Security"
   github_url: "https://github.com/kholcomb/k8sec-toolkit"
+  blog_url: "/blog/2024/12/19/k8sec-toolkit-kubernetes-security/"
 
 - name: "ClaudeCode Prompting Framework"
   description: "Multi-Persona Development Team Framework - A prompt engineering template for structured, role-based development assistance with Claude Code."
@@ -24,6 +26,7 @@
     - "Development"
     - "AI"
   github_url: "https://github.com/kholcomb/ClaudeCode_Prompting_Framework"
+  blog_url: "/blog/2024/12/19/claudecode-prompting-framework/"
 
 - name: "Claude Code Tasks VSCode Extension"
   description: "A Visual Studio Code extension that provides an intuitive interface for managing Claude Code todo lists within the VSCode environment."
@@ -33,3 +36,4 @@
     - "VSCode"
     - "Tools"
   github_url: "https://github.com/kholcomb/claude-code-tasks-vscode"
+  blog_url: "/blog/2024/12/19/claude-code-tasks-vscode-extension/"
