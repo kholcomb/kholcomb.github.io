@@ -5,6 +5,9 @@ date: 2025-06-20 13:00:00 -0800
 categories: [vscode, tools, productivity]
 tags: [vscode-extension, claude-code, task-management, developer-tools]
 excerpt: "Enhance your Claude Code workflow with a dedicated VSCode extension that seamlessly integrates task management, progress tracking, and AI-assisted development directly into your IDE."
+redirect_from:
+  - /categories-vscode/
+  - /blog-categories-vscode/
 ---
 
 # Streamlining AI-Assisted Development: Claude Code Tasks for VSCode

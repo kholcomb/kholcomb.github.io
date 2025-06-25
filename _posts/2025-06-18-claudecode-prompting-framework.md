@@ -5,6 +5,13 @@ date: 2025-06-18 12:00:00 -0800
 categories: [ai, development, productivity]
 tags: [claude-code, ai-assistance, prompt-engineering, development-tools]
 excerpt: "Discover how to structure AI-assisted development with role-based personas using the ClaudeCode Prompting Framework—transforming Claude Code into a virtual development team with specialized expertise."
+redirect_from:
+  - /categories-ai/
+  - /blog-categories-ai/
+  - /categories-development/
+  - /blog-categories-development/
+  - /categories-productivity/
+  - /blog-categories-productivity/
 ---
 
 # Multi-Persona Development Teams with Claude Code: A Prompting Framework

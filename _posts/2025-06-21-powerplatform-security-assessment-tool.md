@@ -5,6 +5,13 @@ date: 2025-06-21 10:00:00 -0800
 categories: [security, microsoft, tools]
 tags: [powershell, power-platform, security-assessment, microsoft-365]
 excerpt: "Discover how to comprehensively assess and secure your Microsoft Power Platform environment with an automated PowerShell-based security assessment tool that identifies vulnerabilities and provides actionable remediation guidance."
+redirect_from:
+  - /categories-security/
+  - /blog-categories-security/
+  - /categories-microsoft/
+  - /blog-categories-microsoft/
+  - /categories-tools/
+  - /blog-categories-tools/
 ---
 
 # Securing Microsoft Power Platform: Introducing a Comprehensive Assessment Tool
