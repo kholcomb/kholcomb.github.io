@@ -6,8 +6,7 @@ categories: [mcp, api, integration]
 tags: [spotify, mcp-server, claude-desktop, typescript, oauth, music-api]
 excerpt: "Transform your music experience with natural language control through the Spotify MCP Server - a secure, enterprise-grade integration that brings conversational AI to your Spotify library via Claude Desktop."
 redirect_from:
-  - /categories-mcp/
-  - /blog-categories-mcp/
+  - /blog/categories/#mcp
 ---
 
 # Conversational Music Control: Spotify MCP Server for Claude Desktop

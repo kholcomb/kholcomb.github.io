@@ -6,8 +6,7 @@ categories: [security, mcp, infrastructure]
 tags: [dxt, mcp-servers, security-implementation, typescript, desktop-extensions]
 excerpt: "Exploring the critical security enhancements in Desktop Extensions (DXT) that enable safe distribution and installation of Model Context Protocol servers, creating a trusted ecosystem for AI-powered desktop integrations."
 redirect_from:
-  - /categories-security/
-  - /blog-categories-security/
+  - /blog/categories/#security
 ---
 
 # Securing the MCP Ecosystem: Desktop Extensions with Comprehensive Security
