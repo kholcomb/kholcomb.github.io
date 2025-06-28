@@ -37,3 +37,12 @@
     - "Tools"
   github_url: "https://github.com/kholcomb/claude-code-tasks-vscode"
   blog_url: "/blog/2025/06/20/claude-code-tasks-vscode-extension/"
+
+- name: "Spotify MCP Server"
+  description: "A Model Context Protocol server for Spotify Web API integration with Claude Desktop."
+  icon: "fab fa-spotify"
+  tags:
+    - "TypeScript"
+    - "MCP"
+    - "API"
+  github_url: "https://github.com/kholcomb/Spotify-mcp-server"
