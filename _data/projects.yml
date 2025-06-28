@@ -47,3 +47,13 @@
     - "API"
   github_url: "https://github.com/kholcomb/Spotify-mcp-server"
   blog_url: "/blog/2025/06/22/spotify-mcp-server-claude-integration/"
+
+- name: "DXT Security Implementation"
+  description: "Enhanced Desktop Extensions (DXT) with comprehensive security implementation for safe distribution and installation of local MCP servers."
+  icon: "fas fa-lock"
+  tags:
+    - "TypeScript"
+    - "Security"
+    - "MCP"
+  github_url: "https://github.com/kholcomb/dxt/tree/comprehensive-security-implementation"
+  blog_url: "/blog/2025/06/23/dxt-security-implementation-mcp-extensions/"
